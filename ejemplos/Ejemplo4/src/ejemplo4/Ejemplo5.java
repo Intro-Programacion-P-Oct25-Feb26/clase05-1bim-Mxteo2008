@@ -32,7 +32,7 @@ public class Ejemplo5 {
 
         int numero = 10; // se está comparando un valor numérico
 
-        if (numero != 10) {
+        if (numero != 10) { // "!" significa negación en ambos casos
             System.out.println("correcto");
         }
 
