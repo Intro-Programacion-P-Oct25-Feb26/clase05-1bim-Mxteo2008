@@ -29,8 +29,7 @@ public class Ejemplo6 {
         String parroquia;
         int dia;
         double desc = 0.05;
-        double valorDesc;
-        double valorFinal;
+        
         
         System.out.println("Ingrese el nombre por favor");
         nombre = entrada.nextLine();
@@ -51,18 +50,32 @@ public class Ejemplo6 {
         System.out.println("Ingrese día de pago");
         dia = entrada.nextInt();    
         
-        if {();
-         
-             
-         
-         {
-            System.out.printf("Estudiante %s aprobado con un promedio: %.2f\n "
-                    + "Ciudad: %s\t\tEdad:%s\n", 
-                    miNombre, promedio, ciudad, edad);
+        double valorDesc = (membresia * desc);
+        double descFin = (membresia - valorDesc);
+        
+        if ((dia >= 0 && dia < 10) || ((parroquia.equals("El Valle") || 
+                (parroquia.equals("El Sagrario"))))){
+            System.out.printf("FUERZA TOTAL\n\nNombre: %s\nApellido: "
+                    + "%s\nUsuario: %s\nEdad: %s\nDia de pago: %s\nParroquia: "
+                    + "%s\nUSTED HA APLICADO AL DESCUENTO: $%.2f\n\n", 
+                    nombre, 
+                    apellido, 
+                    usuario, 
+                    edad, 
+                    dia, 
+                    parroquia, 
+                    descFin);
         }else{
-            System.out.printf("Estudiante reprobado con un "
-                    + "promedio: %.2f\nSu edad es:%s\nSu nombre es: %s\n"
-                    , promedio, edad, miNombre);
+            System.out.printf("FUERZA TOTAL\n\nNombre: %s\nApellido: "
+                    + "%s\nUsuario: %s\nEdad: %s\nDia de pago: %s\nParroquia: "
+                    + "%s\nMEMBRESIA MENSUAL SIN DESCUENTO: $%.2f\n\n", 
+                    nombre, 
+                    apellido, 
+                    usuario, 
+                    edad, 
+                    dia, 
+                    parroquia, 
+                    membresia);
         }
            
     }
