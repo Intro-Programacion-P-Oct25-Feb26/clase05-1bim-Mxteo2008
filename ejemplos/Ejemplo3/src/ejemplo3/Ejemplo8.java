@@ -27,7 +27,7 @@ public class Ejemplo8 {
         //cualquier otra nota será nota fuera de rango
         // si la nota es negativa hay que indicarlo
         double promedio = 2.97;
-        String mensaje = "";
+        String mensaje = " ";
 
         if (promedio >= 7.5) {
             // System.out.printf("Estudiante aprobado con un "
